@@ -13,7 +13,7 @@ body {
   align-items: center;
 }
 body .app {
-  margin: 2.5rem 1.5rem;
+  margin: 4rem 1.5rem 2.5rem;
   max-width: 900px;
 }
 @media (min-width: 600px) {
