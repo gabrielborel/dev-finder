@@ -1,3 +1,5 @@
 # devfinder
 
-Link <a>aaa</a>
+devfinder is a github's username finder
+
+https://gabrielborel.github.io/devfinder/
