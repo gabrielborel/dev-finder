@@ -1,0 +1,311 @@
+$dark-blue: #0D1B2A;
+$medium-blue: #1B263B;
+$medium-light-blue: #415A77;
+$light-blue: #778DA9;
+$beige: #E0E1DD;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $dark-blue;
+    font-family: 'Space Mono', monospace;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .app {
+        margin: 2.5rem 1.5rem;
+        max-width: 900px;
+
+        @media (min-width: 600px) {
+            min-width: 600px;
+        }
+
+        @media (min-width: 1000px) {
+            min-width: 800px;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            color: $beige;
+    
+            .title {
+                font-size: 1.5rem;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+
+            .theme-switcher {
+                display: flex;
+                align-items: center;
+                font-family: 'Space Mono', monospace;
+                
+                .theme {
+                    margin-right: .5rem;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                }
+
+                input {
+                    opacity: 0;
+                    position: relative;
+                    right: 18px;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .message-error {
+            margin-left: 1rem;
+            font-style: italic;
+            color: red;
+            font-size: .9rem;
+        }
+
+        .search-area {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            margin-top: .5rem;
+
+            i {
+                position: relative;
+                left: 10px;
+                color: #3f9ae6;
+            }
+
+            .search-input {
+                width: 100%;
+                text-align: left;
+                font-size: .9em;
+                font-family: 'Space Mono', monospace;
+                background-color: $medium-light-blue;
+                border: none;
+                border-radius: 10px;
+                padding: 1rem;
+                padding-right: 4.5rem;
+                margin-right: -80px;
+                margin-left: -16px;
+                color: $beige;
+                font-weight: 700;
+                text-align: center;
+
+                &::placeholder {
+                    font-weight: 700;
+                    color: $beige;
+                }
+
+                &::selection {
+                    border: 2px solid $beige;
+                }
+            }
+
+            .error {
+                border: 2px solid red;
+            }
+
+            .search-button {
+                border: none;
+                border-radius: 10px;
+                height: 45px;
+                background-color: #3f9ae6;
+                color: $beige;
+                font-weight: bold;
+                padding: 1rem;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #3da5d9;
+                }
+
+                &:active {
+                    background-color: #3da5d9;
+                    transform: translateY(2px);
+                }
+            }
+        }
+
+        .github-data {
+            background-color: $medium-light-blue;
+            border-radius: 10px;
+            padding: 1.5rem;
+
+            .top-content {
+                display: flex;
+                align-items: center;
+                margin-bottom: 2rem;
+
+                .user-img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    margin-right: 1rem;
+
+                    @media (min-width: 600px) {
+                        width: 120px;
+                        height: 120px;
+                    }
+                }
+
+                .user-info {
+
+                    .name {
+                        color: $beige;
+                        font-weight: 700;
+                        margin-bottom: .2rem;
+                    }
+
+                    .user {
+                        color: #3f9ae6;
+                        font-weight: 700;
+                        margin-bottom: 1rem;
+                        font-size: .9rem;
+                    }
+                }
+
+                .joined {
+                    color: $beige;
+                    font-size: .9rem;
+                }
+            }
+
+            .bio {
+                margin-bottom: 1.5rem;
+
+                .content {
+                    line-height: 1.5;
+                    color: $beige;
+                }
+            }
+
+            .git-data {
+                background-color: $dark-blue;
+                border-radius: 10px;
+                padding: 1.5rem;
+                color: $beige;
+                display: flex;
+                justify-content: space-between;
+
+                .cell {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .upper {
+                        margin-bottom: .8rem;
+                        font-size: .8rem;
+                        opacity: .8;
+                    }
+
+                    .bottom {
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .user-data {
+                margin-top: 1.5rem;
+                font-weight: 700;
+
+                @media (min-width: 600px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-evenly;
+                    height: 80px;
+                }
+
+                .location, .site, .twitter, .company {
+                    display: flex;
+                    color: $beige;
+                    overflow-wrap: break-word;
+                    max-width: 250px;
+
+                    i {
+                        margin-right: .7rem;
+                    }
+                }
+
+                .location, .site, .twitter {
+                    margin-bottom: 1rem;
+                    max-width: 280px;
+                    overflow-wrap: break-word;
+                }
+
+                .unavailable {
+                    opacity: .6;
+                }
+            }
+        }
+    }
+
+    &.light-mode {
+        background-color: #F0EFEB;
+
+        .header {
+            .title {
+                color: #284b63;
+            }
+            .theme-switcher {
+                color: #284b63;
+            }
+        }
+
+        .search-area {
+            .search-input {
+                background-color: #BCD4E6;
+                color: #284b63;
+                &::placeholder {
+                    color: #284b63;
+                }
+            }
+        }
+
+        .github-data {
+            background-color: #BCD4E6;
+
+            .top-content {
+                .user-info {
+                    .main {
+                        .name, .user {
+                            color: #284b63;
+                        }
+                    }
+                    .joined {
+                        color: #284b63;
+                    }
+                }
+            }
+
+            .bio {
+                .content {
+                    color: #284b63;
+                }
+            }
+
+            .git-data {
+                background-color: #F0EFEB;
+                color: #284b63;
+            }
+
+            .user-data {
+                .location, .site, .twitter, .company {
+                    color: #284b63;
+                }
+            }
+        }
+    }
+}

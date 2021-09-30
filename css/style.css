@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0D1B2A;
+  font-family: "Space Mono", monospace;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+body .app {
+  margin: 2.5rem 1.5rem;
+  max-width: 900px;
+}
+@media (min-width: 600px) {
+  body .app {
+    min-width: 600px;
+  }
+}
+@media (min-width: 1000px) {
+  body .app {
+    min-width: 800px;
+  }
+}
+body .app .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  color: #E0E1DD;
+}
+body .app .header .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+body .app .header .theme-switcher {
+  display: flex;
+  align-items: center;
+  font-family: "Space Mono", monospace;
+}
+body .app .header .theme-switcher .theme {
+  margin-right: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+body .app .header .theme-switcher input {
+  opacity: 0;
+  position: relative;
+  right: 18px;
+}
+body .app .header .theme-switcher input:hover {
+  cursor: pointer;
+}
+body .app .message-error {
+  margin-left: 1rem;
+  font-style: italic;
+  color: red;
+  font-size: 0.9rem;
+}
+body .app .search-area {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+}
+body .app .search-area i {
+  position: relative;
+  left: 10px;
+  color: #3f9ae6;
+}
+body .app .search-area .search-input {
+  width: 100%;
+  text-align: left;
+  font-size: 0.9em;
+  font-family: "Space Mono", monospace;
+  background-color: #415A77;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  padding-right: 4.5rem;
+  margin-right: -80px;
+  margin-left: -16px;
+  color: #E0E1DD;
+  font-weight: 700;
+  text-align: center;
+}
+body .app .search-area .search-input::placeholder {
+  font-weight: 700;
+  color: #E0E1DD;
+}
+body .app .search-area .search-input::selection {
+  border: 2px solid #E0E1DD;
+}
+body .app .search-area .error {
+  border: 2px solid red;
+}
+body .app .search-area .search-button {
+  border: none;
+  border-radius: 10px;
+  height: 45px;
+  background-color: #3f9ae6;
+  color: #E0E1DD;
+  font-weight: bold;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+body .app .search-area .search-button:hover {
+  cursor: pointer;
+  background-color: #3da5d9;
+}
+body .app .search-area .search-button:active {
+  background-color: #3da5d9;
+  transform: translateY(2px);
+}
+body .app .github-data {
+  background-color: #415A77;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+body .app .github-data .top-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+body .app .github-data .top-content .user-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+@media (min-width: 600px) {
+  body .app .github-data .top-content .user-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+body .app .github-data .top-content .user-info .name {
+  color: #E0E1DD;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+body .app .github-data .top-content .user-info .user {
+  color: #3f9ae6;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+body .app .github-data .top-content .joined {
+  color: #E0E1DD;
+  font-size: 0.9rem;
+}
+body .app .github-data .bio {
+  margin-bottom: 1.5rem;
+}
+body .app .github-data .bio .content {
+  line-height: 1.5;
+  color: #E0E1DD;
+}
+body .app .github-data .git-data {
+  background-color: #0D1B2A;
+  border-radius: 10px;
+  padding: 1.5rem;
+  color: #E0E1DD;
+  display: flex;
+  justify-content: space-between;
+}
+body .app .github-data .git-data .cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .app .github-data .git-data .cell .upper {
+  margin-bottom: 0.8rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+body .app .github-data .git-data .cell .bottom {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+body .app .github-data .user-data {
+  margin-top: 1.5rem;
+  font-weight: 700;
+}
+@media (min-width: 600px) {
+  body .app .github-data .user-data {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 80px;
+  }
+}
+body .app .github-data .user-data .location, body .app .github-data .user-data .site, body .app .github-data .user-data .twitter, body .app .github-data .user-data .company {
+  display: flex;
+  color: #E0E1DD;
+  overflow-wrap: break-word;
+  max-width: 250px;
+}
+body .app .github-data .user-data .location i, body .app .github-data .user-data .site i, body .app .github-data .user-data .twitter i, body .app .github-data .user-data .company i {
+  margin-right: 0.7rem;
+}
+body .app .github-data .user-data .location, body .app .github-data .user-data .site, body .app .github-data .user-data .twitter {
+  margin-bottom: 1rem;
+  max-width: 280px;
+  overflow-wrap: break-word;
+}
+body .app .github-data .user-data .unavailable {
+  opacity: 0.6;
+}
+body.light-mode {
+  background-color: #F0EFEB;
+}
+body.light-mode .header .title {
+  color: #284b63;
+}
+body.light-mode .header .theme-switcher {
+  color: #284b63;
+}
+body.light-mode .search-area .search-input {
+  background-color: #BCD4E6;
+  color: #284b63;
+}
+body.light-mode .search-area .search-input::placeholder {
+  color: #284b63;
+}
+body.light-mode .github-data {
+  background-color: #BCD4E6;
+}
+body.light-mode .github-data .top-content .user-info .main .name, body.light-mode .github-data .top-content .user-info .main .user {
+  color: #284b63;
+}
+body.light-mode .github-data .top-content .user-info .joined {
+  color: #284b63;
+}
+body.light-mode .github-data .bio .content {
+  color: #284b63;
+}
+body.light-mode .github-data .git-data {
+  background-color: #F0EFEB;
+  color: #284b63;
+}
+body.light-mode .github-data .user-data .location, body.light-mode .github-data .user-data .site, body.light-mode .github-data .user-data .twitter, body.light-mode .github-data .user-data .company {
+  color: #284b63;
+}
+
+/*# sourceMappingURL=style.css.map */

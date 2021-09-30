@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/05d5a76bfd.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>devfinder</title>
+</head>
+<body>
+
+    <div class="app">
+
+        <div class="header">
+            <h1 class="title">devfinder</h1>
+            <div class="theme-switcher">
+                <p class="theme">LIGHT</p>
+                <i class="fas fa-sun" id="icon"></i>
+                <input type="checkbox" id="theme">
+            </div>
+        </div>
+
+        <span class="message-error"></span>
+        
+        <div class="search-area">
+            <span><i class="fas fa-search"></i></span>
+            <input type="text" placeholder="Search GitHub username" class="search-input">
+            <input type="submit" class="search-button" value="Search">
+        </div>
+
+        <div class="github-data">
+
+            <div class="top-content">
+                <img class="user-img" src="" alt="">
+                <div class="user-info">
+                    <div class="main">
+                        <p class="name"></p>
+                        <p class="user"></p>
+                    </div>
+                    <p class="joined"></p>
+                </div>
+            </div>
+
+            <div class="bio">
+                <p class="content"></p>
+            </div>
+
+            <div class="git-data">
+                <div class="cell">
+                    <p class="upper">Repos</p>
+                    <p class="bottom repos"></p>
+                </div>
+                <div class="cell">
+                    <p class="upper">Followers</p>
+                    <p class="bottom followers"></p>
+                </div>
+                <div class="cell">
+                    <p class="upper">Following</p>
+                    <p class="bottom following"></p>
+                </div>
+            </div>  
+
+            <div class="user-data">
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p class="location-name"></p>
+                </div>
+                <div class="site">
+                    <i class="fas fa-link"></i>
+                    <p class="site-name"></p>
+                </div>
+                <div class="twitter">
+                    <i class="fab fa-twitter"></i>
+                    <p class="twitter-name"></p>
+                </div>
+                <div class="company">
+                    <i class="far fa-building"></i>
+                    <p class="company-name"></p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>
