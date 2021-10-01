@@ -5,6 +5,8 @@
 
 https://gabrielborel.github.io/devfinder/
 
+:yellow_circle: This project was built using __HTML__, __JS__ and __SCSS__ :yellow_circle:
+
  __PREVIEW__
 
 ![Dark-Mode Image Preview](./images/desktop-dark-preview.png)
