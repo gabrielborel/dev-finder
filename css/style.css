@@ -215,22 +215,23 @@ body .app .github-data .user-data .unavailable {
   opacity: 0.6;
 }
 body .footer {
+  width: 100%;
   text-align: center;
   background-color: #415A77;
   padding: 1rem;
-  border-radius: 10px;
   color: #E0E1DD;
 }
 body .footer i {
-  color: purple;
+  color: #3f9ae6;
 }
 body .footer a {
-  color: #E0E1DD;
+  color: #3f9ae6;
+  text-decoration: none;
   font-weight: 700;
 }
 body .footer a:hover {
   cursor: pointer;
-  color: purple;
+  color: #3f9ae6;
   text-decoration: underline;
 }
 body.light-mode {
@@ -266,6 +267,10 @@ body.light-mode .github-data .git-data {
   color: #284b63;
 }
 body.light-mode .github-data .user-data .location, body.light-mode .github-data .user-data .site, body.light-mode .github-data .user-data .twitter, body.light-mode .github-data .user-data .company {
+  color: #284b63;
+}
+body.light-mode .footer {
+  background-color: #BCD4E6;
   color: #284b63;
 }
 
