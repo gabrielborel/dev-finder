@@ -9,7 +9,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 body .app {
@@ -213,6 +213,25 @@ body .app .github-data .user-data .location, body .app .github-data .user-data .
 }
 body .app .github-data .user-data .unavailable {
   opacity: 0.6;
+}
+body .footer {
+  text-align: center;
+  background-color: #415A77;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #E0E1DD;
+}
+body .footer i {
+  color: purple;
+}
+body .footer a {
+  color: #E0E1DD;
+  font-weight: 700;
+}
+body .footer a:hover {
+  cursor: pointer;
+  color: purple;
+  text-decoration: underline;
 }
 body.light-mode {
   background-color: #F0EFEB;

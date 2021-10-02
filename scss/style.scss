@@ -15,7 +15,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
     .app {
@@ -248,6 +248,30 @@ body {
                 .unavailable {
                     opacity: .6;
                 }
+            }
+        }
+    }
+
+    .footer {
+        text-align: center;
+        background-color: #415A77;
+        padding: 1rem;
+        border-radius: 10px;
+        color: #E0E1DD;
+
+        i {
+            color: purple;
+        }
+
+        a {
+            color: #E0E1DD;
+
+            font-weight: 700;
+
+            &:hover {
+                cursor: pointer;
+                color: purple;
+                text-decoration: underline;
             }
         }
     }
