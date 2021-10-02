@@ -3,7 +3,7 @@
 - devfinder helps you to find devs !!
 - just type the GitHub username and __click__ on the __search button__
 
-https://gabrielborel.github.io/devfinder/
+https://gabrielborel.github.io/dev-finder/
 
 :yellow_circle: This project was built using __HTML__, __JS__ and __SCSS__ :yellow_circle:
 
